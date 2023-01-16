@@ -1,0 +1,10 @@
+.status {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(218, 79, 79);
+}
+.active {
+    background-color: green;
+}
