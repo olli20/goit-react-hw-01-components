@@ -1,10 +1,12 @@
 import FriendListItem from './FriendListItem';
 
+import styles from './friend-list.module.scss'
+
 const FriendList = ({ friends }) => {
 
-    return (<ul className="friend-list">
-        {
-            friends.map(({ id, avatar, name, isOnline }) => {
+    return (
+        <ul className={styles.friendList}>
+            {friends.map(({ id, avatar, name, isOnline }) => {
                 return (
                     <FriendListItem
                         key={id}
@@ -12,9 +14,9 @@ const FriendList = ({ friends }) => {
                         name={name}
                         isOnline={isOnline} />
                 )
-            })
-        }
-    </ul>)
+            })}   
+        </ul>
+    )
 }
 
 export default FriendList;

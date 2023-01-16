@@ -1,13 +1,12 @@
-import styles from './friends-list-item.module.css'
+import styles from './friend-list-item.module.scss'
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
     const isOnlineClassList = isOnline ? `${styles.status} ${styles.active}` : styles.status;
     return (
-        
-        <li className="item">
+        <li className={styles.item}>
             <span className={isOnlineClassList}></span>
-            <img className="avatar" src={avatar} alt="User avatar" width="48" />
-            <p className="name">{name}</p>
+            <img className={styles.avatar} src={avatar} alt="User avatar" width="48" />
+            <p className={styles.name}>{name}</p>
         </li>
     );
 };
