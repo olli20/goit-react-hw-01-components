@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './profile.module.scss';
 
 const Profile = ({ avatar, location, stats, tag, username }) => {
@@ -33,3 +34,15 @@ const Profile = ({ avatar, location, stats, tag, username }) => {
 };
 
 export default Profile;
+
+Profile.propTypes = {
+    avatar: PropTypes.string,
+    location: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    stats: PropTypes.shape({
+        followers: PropTypes.number.isRequired,
+        views: PropTypes.number.isRequired,
+        likes: PropTypes.number.isRequired,
+    }),
+}
