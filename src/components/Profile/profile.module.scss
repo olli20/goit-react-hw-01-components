@@ -6,6 +6,7 @@
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .description {
@@ -53,7 +54,6 @@
     
     background-color: #f1f8fa;
     border-top: 1px solid #e4e9f0;
-    border-radius: 0px 0px 5px 5px;
 }
 
 .item {
