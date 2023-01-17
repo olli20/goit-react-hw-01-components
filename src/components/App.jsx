@@ -3,14 +3,16 @@ import Statistics from './Statistics/Statistics'
 import FriendList from './FriendList/FriendList'
 import TransactionHistory from './TransactionHistory/TransactionHistory'
 
+import styles from './app.module.scss'
+
 import user from '../data/user.json'
-import data from '../data/data.json'
+import data from '../data/stat-data.json'
 import friends from '../data/friends.json'
-import transactions from "../data/transactions.json";
+import transactions from "../data/transactions.json"
 
 export const App = () => {
   return (
-    <>
+    <div className={styles.container}>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -24,6 +26,6 @@ export const App = () => {
       />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions}/>;
-    </>
+    </div>
   );
 };

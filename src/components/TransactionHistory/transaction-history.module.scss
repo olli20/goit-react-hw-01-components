@@ -1,0 +1,40 @@
+.transactionHistory {
+    min-width: 600px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-collapse: collapse;
+} 
+
+th, 
+td {
+    padding: 15px;
+}
+
+th:not(:last-child) {
+    border-right: 1px solid #ebe9e9;
+}
+
+td:not(:last-child) {
+    border-right: 1px solid #ebe9e9;
+}
+
+.tableHead {
+    padding: 15px;
+
+    color: white;
+    background-color: #97c0c7;
+
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+.tableRow {
+    background-color: white;
+    color: grey;
+    text-align: center;
+
+    &:nth-child(2n) {
+        background-color: #f1f8fa;
+    }
+}

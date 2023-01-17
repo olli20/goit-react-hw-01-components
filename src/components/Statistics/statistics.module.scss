@@ -6,7 +6,12 @@
 .title {
     margin: 0;
     margin-bottom: 30px;
+    color: grey;
+    font-size: 22px;
+    font-weight: 600;
     text-align: center;
+    text-transform: uppercase;
+
 }
 
 .list {
@@ -22,14 +27,14 @@
     flex-direction: column;
     align-items: center;
 
-    padding-top: 8px;
+    padding-top: 12px;
 
-    width: 75px;
+    width: 80px;
     height: 75px;
 
     color: white;
 
-    // border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 5px;
 
     &:not(:last-child) {
@@ -37,33 +42,35 @@
     }
 
     &:nth-child(5n + 1) {
-        background-color: orange;
+        background-color: #dcbcc7;
     }
 
     &:nth-child(5n + 2) {
-        background-color: rgb(111, 173, 56);
+        background-color: #e6a7ba;
     }
 
     &:nth-child(5n + 3) {
-        background-color: rgb(174, 102, 219);
+        background-color: #e5ac86;
     }
 
     &:nth-child(5n + 4) {
-        background-color: rgb(219, 147, 102);
+        background-color: #e29585;
     }
 
     &:nth-child(5n + 5) {
-        background-color: rgb(51, 169, 212);
+        background-color: #97c0c7;
     }
 
 }
 
 .label {
     margin-bottom: 7px;
-    
+    font-size: 14px;
 }
 
 .percentage {
     font-size: 20px;
+    font-weight: 600;
+
 }
 
