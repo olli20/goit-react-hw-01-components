@@ -11,7 +11,6 @@
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
-
 }
 
 .list {
@@ -39,25 +38,24 @@
     border-radius: 5px;
 
     &:nth-child(5n + 1) {
-        background-color: #dcbcc7;
+        background-color: #d8a1b3;
     }
 
     &:nth-child(5n + 2) {
-        background-color: #e6a7ba;
+        background-color: #da86a1;
     }
 
     &:nth-child(5n + 3) {
-        background-color: #e5ac86;
+        background-color: #da9c74;
     }
 
     &:nth-child(5n + 4) {
-        background-color: #e29585;
+        background-color: #df8775;
     }
 
     &:nth-child(5n + 5) {
-        background-color: #97c0c7;
+        background-color: #76bcc9;
     }
-
 }
 
 .label {
@@ -68,6 +66,5 @@
 .percentage {
     font-size: 20px;
     font-weight: 600;
-
 }
 
