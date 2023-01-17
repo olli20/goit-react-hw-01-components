@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import styles from './friend-list-item.module.scss'
+import styles from './friend-list-item.module.scss';
+import defaultImage from '../../images/default-avatar.png';
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
     const isOnlineClassList = isOnline ? `${styles.status} ${styles.active}` : styles.status;
@@ -14,8 +15,12 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
 
 export default FriendListItem;
 
+FriendListItem.defaultProps = {
+    avatar: defaultImage,
+};
+
 FriendListItem.propTypes = {
     avatar: PropTypes.string,
     name: PropTypes.string.isRequired,
     isOnline: PropTypes.bool.isRequired,
-}
+};

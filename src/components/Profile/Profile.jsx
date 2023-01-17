@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import defaultImage from '../../images/default-avatar.png';
 import styles from './profile.module.scss';
 
 const Profile = ({ avatar, location, stats, tag, username }) => {
@@ -35,6 +36,10 @@ const Profile = ({ avatar, location, stats, tag, username }) => {
 
 export default Profile;
 
+Profile.defaultProps = {
+    avatar: defaultImage,
+};
+
 Profile.propTypes = {
     avatar: PropTypes.string,
     location: PropTypes.string.isRequired,
@@ -45,4 +50,4 @@ Profile.propTypes = {
         views: PropTypes.number.isRequired,
         likes: PropTypes.number.isRequired,
     }),
-}
+};

@@ -4,13 +4,10 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: 75px;
+    padding: 5px 15px;
 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-
     border-radius: 5px;
 
     &:not(:last-child) {
@@ -24,11 +21,11 @@
     height: 17px;
     margin-right: 10px;
     border-radius: 50%;
-    background-color: rgb(218, 79, 79);
+    background-color: rgb(235, 121, 121);
 }
 
 .active {
-    background-color: green;
+    background-color: rgb(67, 168, 109);
 }
 
 .avatar {

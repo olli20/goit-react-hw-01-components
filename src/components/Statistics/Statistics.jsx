@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from './statistics.module.scss'
+import styles from './statistics.module.scss';
 
 const Statistics = ({ title, stats }) => {
     return (
@@ -29,4 +29,4 @@ Statistics.propTypes = {
         label: PropTypes.string.isRequired,
         percentage: PropTypes.number.isRequired,
     })),
-}
+};

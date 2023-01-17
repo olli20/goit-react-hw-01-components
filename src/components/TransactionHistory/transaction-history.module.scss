@@ -1,14 +1,17 @@
 .transactionHistory {
-    min-width: 600px;
+    min-width: 500px;
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
 } 
 
-th, 
+th,
 td {
     padding: 15px;
 }
+
 
 th:not(:last-child) {
     border-right: 1px solid #ebe9e9;
@@ -19,9 +22,8 @@ td:not(:last-child) {
 }
 
 .tableHead {
-    color: white;
     background-color: #97c0c7;
-
+    color: white;
     font-size: 12px;
     text-transform: uppercase;
 }
